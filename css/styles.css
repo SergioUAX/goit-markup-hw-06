@@ -3,7 +3,6 @@ body {
     font-family: "Roboto",sans-serif;
     color: #434455;
     background: #fff;
-
  }
 
  a {
@@ -36,16 +35,15 @@ body {
      overflow: hidden;
  }
 
- .container {
-     width: 1158px;
-     padding-left: 15px;
-     padding-right: 15px;
-     margin: 0 auto;
- }
+.container {
+    max-width: 320px;
+    padding: 96px 16px; 
+    margin: 0 auto;
+}
 
  .section {
-     padding-top: 120px;
-     padding-bottom: 120px;
+     padding-top: 0px;
+     padding-bottom: 0px;
  }
 
 .header {
@@ -53,6 +51,7 @@ body {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     padding: 24px 0;
 }
+
 .header-container {
     display: flex;
 }
@@ -194,24 +193,16 @@ body {
 
 .advantages-list {
     display: flex;
-    gap: 24px;
+    gap: 72px;
+    flex-wrap: wrap;
 }
 
 .advantages-list-item {
-    width: calc((100% - 3 * 24px) / 4);
+   width: 100%;
 }
 
 .advantages-list-item-iconframe {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f4f4fd;
-    height: 112px;
-    width: 100%;
-    border-radius: 4px;
-    border: 1px solid #8e8f99;
-    position: relative;
-    margin-bottom: 8px;
+    display: none;    
 }
 
 .advantages-list-item-icon {
@@ -219,15 +210,17 @@ body {
 }
 
 .advantages-list-item-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
+    text-align: center;
     color: #2e2f42;
     margin-bottom: 8px;
 }
 
 .advantages-list-item-text {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -251,7 +244,10 @@ body {
 
 .team-list {
     display: flex;
-    gap: 24px;
+    gap: 72px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .team-list-item {
@@ -267,7 +263,6 @@ body {
 
 .team-list-text {
     padding: 32px 0;
-
 }
 
 .team-list-item-subtitle {
@@ -281,6 +276,7 @@ body {
 }
 
 .team-list-item-text {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -588,7 +584,6 @@ body {
     padding: 0;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .modal-button-close-icon {
@@ -706,12 +701,6 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    
-    /* margin-top: 16px;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    gap: 8px; */
 }
 
 .modal-policy-text-span {
@@ -737,9 +726,6 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-policy-link {
-    /* line-height: 1.33;
-    text-decoration: underline;
-    text-decoration-skip-ink: none; */
     color: #4d5ae5;
 }
 
@@ -757,9 +743,73 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     border: none;
     background-color: #4d5ae5;
-    /* text-align: center;
-    border-radius: 4px;
-    padding: 16px 32px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15); */
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 100%;
+        max-width: 768px;
+    }
+
+    .advantages-list {
+        gap: 24px;
+        row-gap: 72px;
+    }
+        
+    .advantages-list-item {
+        max-width: calc((100% - 24px) / 2);        
+    }
+    .advantages-list-item-subtitle {
+        text-align: left;        
+    }
+
+    .team-list {
+        gap: 24px;
+        row-gap: 64px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 100%;
+        max-width: 1158px;
+        padding: 0px 15px;
+    }
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+    .advantages-list {
+            gap: 24px;
+            flex-wrap: nowrap;
+        }
+
+    .advantages-list-item {
+        max-width: calc((100% - 3 * 24px) / 4);
+    }
+    .advantages-list-item-iconframe {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4f4fd;
+        height: 112px;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid #8e8f99;
+        position: relative;
+        margin-bottom: 8px;
+    }
+
+    .advantages-list-item-subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;        
+    }
+
+    
+
 }
