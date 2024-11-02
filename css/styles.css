@@ -151,8 +151,7 @@ button {
 
 .orderservice {
     background: #2e2f42;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding: 72px 52px;    
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -165,16 +164,20 @@ button {
     margin: 0 auto;
 }
 
+.orderservice > .container {
+    padding: 0px;
+}
+
 .orderservice-header {
     margin: 0 auto;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;   
-    margin-bottom: 48px;
-    max-width: 496px;
+    margin-bottom: 72px;
+    max-width: 216px;
 }
 
 .orderservice-button {
@@ -194,7 +197,7 @@ button {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+
 .orderservice-button:hover,
 .orderservice-button:focus {
     background-color: #404bbf;
@@ -762,6 +765,17 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         max-width: 768px;
     }
 
+    .orderservice {
+        padding: 112px 136px;
+    }
+
+    .orderservice-header {
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 36px;
+        max-width: 496px;
+    }
+
     .advantages-list {
         gap: 24px;
         row-gap: 72px;
@@ -788,6 +802,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         max-width: calc((100% - 24px) / 2);
     }
 
+
 }
 
 @media screen and (min-width: 1440px) {
@@ -802,6 +817,14 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         padding-bottom: 120px;
     }
 
+    .orderservice {
+        padding: 188px 472px;        
+    }
+    
+    .orderservice-header {
+        margin-bottom: 48px;
+    }
+
     .advantages-list {
             gap: 24px;            
     }
@@ -809,7 +832,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     .advantages-list-item {
         max-width: calc((100% - 3 * 24px) / 4);
     }
-    
+
     .advantages-list-item-iconframe {
         display: flex;
         align-items: center;
