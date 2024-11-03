@@ -156,12 +156,21 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
         ), 
-        url(../images/orderbackimage.jpg);
+        url(../images/orderbackimage-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     max-width: 1440px;
     margin: 0 auto;
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .orderservice {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url(../images/orderbackimage-mob-2x.jpg);
+    }
 }
 
 .orderservice > .container {
@@ -273,8 +282,7 @@ button {
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-list-item-image {
-    background: url("path_to_image");
+.team-list-item-image {    
     display: block;
 }
 
@@ -365,11 +373,6 @@ button {
     transform: translateY(0);
 }
  
-.portfolio-list-item-image {
-    background: url("path_to_image");
-    
-}
-
 .portfolio-list-item-subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -762,7 +765,6 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 @media screen and (min-width: 768px) {
     .container {
         width: 100%;
@@ -771,6 +773,19 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .orderservice {
         padding: 112px 136px;
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url(../images/orderbackimage.jpg);
+    }
+
+    @media screen and (min-resolution: 192dpi) {
+        .orderservice {
+            background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                url(../images/orderbackimage-2x.jpg);
+        }
     }
 
     .orderservice-header {
@@ -822,7 +837,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .orderservice {
-        padding: 188px 472px;        
+        padding: 188px 472px;
     }
     
     .orderservice-header {
