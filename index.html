@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="header-logo" href="./index.html"
@@ -49,8 +49,104 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="header-mobile-menu-button">
+          <svg class="header-mobile-menu-button-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <div class="header-mobile-menu">
+        <div>
+          <button type="button" class="header-mobile-menu-button-close">
+            <svg
+              class="header-mobile-menu-button-close-icon"
+              width="8"
+              height="8"
+            >
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="header-mobile-menu-list">
+            <li class="header-mobile-menu-item">
+              <a class="header-mobile-menu-link" href="./index.html">Studio</a>
+            </li>
+            <li class="header-mobile-menu-item">
+              <a class="header-mobile-menu-link" href="">Portfolio</a>
+            </li>
+            <li class="header-mobile-menu-item">
+              <a class="header-mobile-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="header-mobile-menu-contacts-list">
+            <li class="header-mobile-menu-contacts-item">
+              <a
+                class="header-mobile-menu-contacts-link"
+                href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="header-mobile-menu-contacts-item">
+              <a
+                class="header-mobile-menu-contacts-link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <div class="header-mobile-menu-soc">
+            <ul class="header-mobile-menu-soc-list">
+              <li class="header-mobile-menu-list-item">
+                <a class="header-mobile-menu-soc-list-item-link" href="">
+                  <svg
+                    class="header-mobile-menu-soc-list-item-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-mobile-menu-soc-list-item">
+                <a class="header-mobile-menu-soc-list-item-link" href="">
+                  <svg
+                    class="header-mobile-menu-soc-list-item-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-mobile-menu-soc-list-item">
+                <a class="header-mobile-menu-soc-list-item-link" href="">
+                  <svg
+                    class="header-mobile-menu-soc-list-item-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-mobile-menu-soc-list-item">
+                <a class="header-mobile-menu-soc-list-item-link" href="">
+                  <svg
+                    class="header-mobile-menu-soc-list-item-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="orderservice">
         <div class="container">
@@ -124,7 +220,10 @@
             <li class="team-list-item">
               <img
                 class="team-list-item-image"
-                srcset="./images/markguerrero.jpg 1x, ./images/markguerrero-2x.jpg 2x"
+                srcset="
+                  ./images/markguerrero.jpg    1x,
+                  ./images/markguerrero-2x.jpg 2x
+                "
                 src="./images/markguerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -244,7 +343,10 @@
             <li class="team-list-item">
               <img
                 class="team-list-item-image"
-                srcset="./images/camilagarcia.jpg 1x, ./images/camilagarcia-2x.jpg 2x"
+                srcset="
+                  ./images/camilagarcia.jpg    1x,
+                  ./images/camilagarcia-2x.jpg 2x
+                "
                 src="./images/camilagarcia.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -304,7 +406,10 @@
             <li class="team-list-item">
               <img
                 class="team-list-item-image"
-                srcset="./images/danielwilson.jpg 1x, ./images/danielwilson-2x.jpg 2x"
+                srcset="
+                  ./images/danielwilson.jpg    1x,
+                  ./images/danielwilson-2x.jpg 2x
+                "
                 src="./images/danielwilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -371,23 +476,35 @@
             <li class="portfolio-list-item">
               <div class="portfolio-list-item-wrapper">
                 <picture>
-                  <source srcset="./images/bankingapp.jpg 1x, ./images/bankingapp-2x.jpg 2x"
+                  <source
+                    srcset="
+                      ./images/bankingapp.jpg    1x,
+                      ./images/bankingapp-2x.jpg 2x
+                    "
                     media="(min-width: 1440px)"
                   />
-                  <source srcset="./images/bankingapp-tab.jpg 1x, ./images/bankingapp-tab-2x.jpg 2x"
+                  <source
+                    srcset="
+                      ./images/bankingapp-tab.jpg    1x,
+                      ./images/bankingapp-tab-2x.jpg 2x
+                    "
                     media="(min-width: 768px)"
                   />
-                  <source srcset="./images/bankingapp-mob.jpg 1x, ./images/bankingapp-mob-2x.jpg 2x"
+                  <source
+                    srcset="
+                      ./images/bankingapp-mob.jpg    1x,
+                      ./images/bankingapp-mob-2x.jpg 2x
+                    "
                     media="(max-width: 767px)"
                   />
                   <img
-                    class="portfolio-list-item-image"                    
+                    class="portfolio-list-item-image"
                     src="./images/bankingapp.jpg"
                     alt="Banking App"
                     width="360"
                     height="300"
                   />
-                </picture>                
+                </picture>
                 <p class="portfolio-list-item-cover">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -402,13 +519,25 @@
             <li class="portfolio-list-item">
               <div class="portfolio-list-item-wrapper">
                 <picture>
-                  <source srcset="./images/cashlesspayment.jpg 1x, ./images/cashlesspayment-2x.jpg 2x"
+                  <source
+                    srcset="
+                      ./images/cashlesspayment.jpg    1x,
+                      ./images/cashlesspayment-2x.jpg 2x
+                    "
                     media="(min-width: 1440px)"
                   />
-                  <source srcset="./images/cashlesspayment-tab.jpg 1x, ./images/cashlesspayment-tab-2x.jpg 2x"
+                  <source
+                    srcset="
+                      ./images/cashlesspayment-tab.jpg    1x,
+                      ./images/cashlesspayment-tab-2x.jpg 2x
+                    "
                     media="(min-width: 768px)"
                   />
-                  <source srcset="./images/cashlesspayment-mob.jpg 1x, ./images/cashlesspayment-mob-2x.jpg 2x"
+                  <source
+                    srcset="
+                      ./images/cashlesspayment-mob.jpg    1x,
+                      ./images/cashlesspayment-mob-2x.jpg 2x
+                    "
                     media="(max-width: 767px)"
                   />
                   <img
@@ -433,13 +562,25 @@
             <li class="portfolio-list-item">
               <div class="portfolio-list-item-wrapper">
                 <picture>
-                  <source srcset="./images/meditationapp.jpg 1x, ./images/meditationapp-2x.jpg 2x"
+                  <source
+                    srcset="
+                      ./images/meditationapp.jpg    1x,
+                      ./images/meditationapp-2x.jpg 2x
+                    "
                     media="(min-width: 1440px)"
                   />
-                  <source srcset="./images/meditationapp-tab.jpg 1x, ./images/meditationapp-tab-2x.jpg 2x"
+                  <source
+                    srcset="
+                      ./images/meditationapp-tab.jpg    1x,
+                      ./images/meditationapp-tab-2x.jpg 2x
+                    "
                     media="(min-width: 768px)"
                   />
-                  <source srcset="./images/meditationapp-mob.jpg 1x, ./images/meditationapp-mob-2x.jpg 2x"
+                  <source
+                    srcset="
+                      ./images/meditationapp-mob.jpg    1x,
+                      ./images/meditationapp-mob-2x.jpg 2x
+                    "
                     media="(max-width: 767px)"
                   />
                   <img
@@ -464,13 +605,25 @@
             <li class="portfolio-list-item">
               <div class="portfolio-list-item-wrapper">
                 <picture>
-                  <source srcset="./images/taxiservice.jpg 1x, ./images/taxiservice-2x.jpg 2x"
+                  <source
+                    srcset="
+                      ./images/taxiservice.jpg    1x,
+                      ./images/taxiservice-2x.jpg 2x
+                    "
                     media="(min-width: 1440px)"
                   />
-                  <source srcset="./images/taxiservice-tab.jpg 1x, ./images/taxiservice-tab-2x.jpg 2x"
+                  <source
+                    srcset="
+                      ./images/taxiservice-tab.jpg    1x,
+                      ./images/taxiservice-tab-2x.jpg 2x
+                    "
                     media="(min-width: 768px)"
                   />
-                  <source srcset="./images/taxiservice-mob.jpg 1x, ./images/taxiservice-mob-2x.jpg 2x"
+                  <source
+                    srcset="
+                      ./images/taxiservice-mob.jpg    1x,
+                      ./images/taxiservice-mob-2x.jpg 2x
+                    "
                     media="(max-width: 767px)"
                   />
                   <img
@@ -480,7 +633,7 @@
                     width="360"
                     height="300"
                   />
-                </picture>              
+                </picture>
                 <p class="portfolio-list-item-cover">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -495,13 +648,25 @@
             <li class="portfolio-list-item">
               <div class="portfolio-list-item-wrapper">
                 <picture>
-                  <source srcset="./images/screenillustrations.jpg 1x, ./images/screenillustrations-2x.jpg 2x"
+                  <source
+                    srcset="
+                      ./images/screenillustrations.jpg    1x,
+                      ./images/screenillustrations-2x.jpg 2x
+                    "
                     media="(min-width: 1440px)"
                   />
-                  <source srcset="./images/screenillustrations-tab.jpg 1x, ./images/screenillustrations-tab-2x.jpg 2x"
+                  <source
+                    srcset="
+                      ./images/screenillustrations-tab.jpg    1x,
+                      ./images/screenillustrations-tab-2x.jpg 2x
+                    "
                     media="(min-width: 768px)"
                   />
-                  <source srcset="./images/screenillustrations-mob.jpg 1x, ./images/screenillustrations-mob-2x.jpg 2x"
+                  <source
+                    srcset="
+                      ./images/screenillustrations-mob.jpg    1x,
+                      ./images/screenillustrations-mob-2x.jpg 2x
+                    "
                     media="(max-width: 767px)"
                   />
                   <img
@@ -528,18 +693,33 @@
             <li class="portfolio-list-item">
               <div class="portfolio-list-item-wrapper">
                 <picture>
-                  <source srcset="./images/onlinecourses.jpg 1x, ./images/onlinecourses-2x.jpg 2x"
+                  <source
+                    srcset="
+                      ./images/onlinecourses.jpg    1x,
+                      ./images/onlinecourses-2x.jpg 2x
+                    "
                     media="(min-width: 1440px)"
                   />
-                  <source srcset="./images/onlinecourses-tab.jpg 1x, ./images/onlinecourses-tab-2x.jpg 2x"
+                  <source
+                    srcset="
+                      ./images/onlinecourses-tab.jpg    1x,
+                      ./images/onlinecourses-tab-2x.jpg 2x
+                    "
                     media="(min-width: 768px)"
                   />
-                  <source srcset="./images/onlinecourses-mob.jpg 1x, ./images/onlinecourses-mob-2x.jpg 2x"
+                  <source
+                    srcset="
+                      ./images/onlinecourses-mob.jpg    1x,
+                      ./images/onlinecourses-mob-2x.jpg 2x
+                    "
                     media="(max-width: 767px)"
                   />
                   <img
                     class="portfolio-list-item-image"
-                    srcset="./images/onlinecourses.jpg 1x, ./images/onlinecourses-2x.jpg 2x"
+                    srcset="
+                      ./images/onlinecourses.jpg    1x,
+                      ./images/onlinecourses-2x.jpg 2x
+                    "
                     src="./images/onlinecourses.jpg"
                     alt="Online Courses"
                     width="360"
@@ -709,7 +889,5 @@
         </form>
       </div>
     </div> -->
-  </body>
-</html>
   </body>
 </html>
